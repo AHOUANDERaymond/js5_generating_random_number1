@@ -1,20 +1,24 @@
-let customerIsBanned = true;
-let soup = "chicken noodle soup";
-let reply;
-let crackers = true;
+//Conditionals: If Statements
 
-if (customerIsBanned) {
-    reply = "No soup for you!";
-} else if (soup && crackers) {  // Utilisation de `&&` pour vérifier les deux
-    reply = `Here is your order of ${soup} & crackers`;  // Utilisation de backticks pour les variables
-} else if (soup) {
-    reply = `Here is your order of ${soup}`;
+let testScore=889;
+let grade;
+let collegeStudent=true;
+
+
+if (testScore>=90){
+    grade="A";
+} else if (testScore>=80){
+    grade="B";
+}else if (testScore>=70){
+    grade="C";
+}else if (testScore>=60){
+    grade="D";
+}else {
+    //Nested if statement
+    if (collegeStudent)
+    grade="U";
 }
 
-if (soup) {
-    reply = `Here is your order of ${soup}`;  // Correction avec backticks
-} else {
-    reply = `Sorry, we are out of ${soup}`;  // Correction avec backticks
-}
 
-console.log(reply);
+
+console.log(grade)
