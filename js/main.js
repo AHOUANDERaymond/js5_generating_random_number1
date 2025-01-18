@@ -1,13 +1,26 @@
-//Your first code challenge
+//Conditionals: If statements
 
-//Write code that will return a random name  from my list
+let customerIsBanned=true;
+let soup="chicken noodle soup"
+let reply;
+let crackers=true;
 
-//console.log("Raymond Ray".charAt(Math.floor(Math.random()*4+1)));
+if (customerIsBanned){
+    reply="No soup for you!";
+} else if (soup & crackers) {
+    reply='Here is your order of ${soup} & crackers';
+} else if (soup) {
+    reply='Here is your order of ${soup}';
+}
 
 
-const prenoms = ["Raymond", "Ray", "Jean", "Marie", "Pierre", "Claire"];
-const randomPrenom = prenoms[Math.floor(Math.random() * prenoms.length)];
 
-console.log(randomPrenom);
+ 
+if (soup){
+    reply='Here is your order of $(soup)';
+    
+}else{
+    reply='Sorry, we are out of $(soup)';
 
-
+}
+console.log(reply)
