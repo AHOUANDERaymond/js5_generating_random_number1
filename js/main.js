@@ -11,28 +11,19 @@ if (playerOne ===computer){
     }else{
         //playerOne wins
     }
-}else if (playerTwo==="paper"){
-    if (computer==="scissors")
+}else if (playerOne==="paper"){
+    if (computer==="scissors"){
         //Computer wins
 
+    }else {
+    //playerOne wins
     }
-        //playerOne wins
+}else{
+    if (computer==="rock"){
+        //Computer wins
 
-
-        if (playertwo ===computer){
-            //tie game
-        
-        }else if (playerOne==="rock"){
-            if (computer==="paper"){
-                //Computer wins
-        
-            }else{
-                //playerOne wins
-            }
-        }else if (playerTwo==="paper"){
-            if (computer==="scissors")
-                //Computer wins
-        
-            }
-                //playerOne wins
+    }else {
+     //playerOne wins
+    }   
+}
 console.log(playerOne)
