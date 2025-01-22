@@ -1,29 +1,25 @@
-//Conditionals: If Statements
+// //Conditionals: Switch statements
+// //Syntax
 
-//Decisions trees!
-if (playerOne ===computer){
-    //tie game
 
-}else if (playerOne==="rock"){
-    if (computer==="paper"){
-        //Computer wins
 
-    }else{
-        //playerOne wins
-    }
-}else if (playerOne==="paper"){
-    if (computer==="scissors"){
-        //Computer wins
+switch(expression OR value){
+    case choice1:
+        console.log("No match")
+        //run this code
+        break;
+    case choice2:
+        console.log("No match")
+        //run this different  code
+    break;
 
-    }else {
-    //playerOne wins
-    }
-}else{
-    if (computer==="rock"){
-        //Computer wins
-
-    }else {
-     //playerOne wins
-    }   
+    case choice2:
+        console.log("No match")
+        //run this different  code
+    break;
+    //add as many code as needed
+    default:
+        //run   this code if no case matches
+        //no need for a break here
 }
-console.log(playerOne)
+      
