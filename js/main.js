@@ -1,37 +1,9 @@
-// //Conditionals: Switch statements
-// //Syntax
+// //Conditionals: Ternary Operator
 
 
-let playerOne="scissors";
-let computer="rock";
+//suntax
+//Condition? ifTrue: ifFalse;
 
-switch (playerOne){
-    case computer:
-        console.log("Tie game");
-        break;
-    case "rock":
-        if (computer==="paper"){
-            console.log("computer wins")
-        }else{
-            console.log("playerOne wins");
-        }
-        break;
-        
-        case "paper":
-            if (computer==="scissors"){
-                console.log("computer wins")
-            }else{
-                console.log("playerOne wins");
-            }
-            break;
-        default:
-            if (computer==="rock"){
-                console.log("computer wins")
-            }else{
-                console.log("computer wins");
-            }
-         
-
-
-}
-      
+let soup= "Chicken Noodle Soup";
+let response= soup? "Yes, we have soup.": "Sorry, no soup today.";
+console.log(response);
