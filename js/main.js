@@ -3,7 +3,7 @@
 
 
 
-switch("2"){
+switch (Math.floor(Math.random()*12+1)){
     case 1:
         console.log("1")
         //run this code
@@ -19,9 +19,9 @@ switch("2"){
         break;
     //add as many code as needed
     default:
-        console.log("3")
+        console.log("No match")
         //run   this code if no case matches
         //no need for a break here
-        // 
+        
 }
       
