@@ -2,26 +2,36 @@
 // //Syntax
 
 
+let playerOne="scissors";
+let computer="rock";
 
-switch (Math.floor(Math.random()*12+1)){
-    case 1:
-        console.log("1")
-        //run this code
+switch (playerOne){
+    case computer:
+        console.log("Tie game");
         break;
-    case 2:
-        console.log("2")
-        //run this different  code
-    break;
-
-    case 2:
-        console.log("1")
-        //run this different  code
+    case "rock":
+        if (computer==="paper"){
+            console.log("computer wins")
+        }else{
+            console.log("playerOne wins");
+        }
         break;
-    //add as many code as needed
-    default:
-        console.log("No match")
-        //run   this code if no case matches
-        //no need for a break here
         
+        case "paper":
+            if (computer==="scissors"){
+                console.log("computer wins")
+            }else{
+                console.log("playerOne wins");
+            }
+            break;
+        default:
+            if (computer==="rock"){
+                console.log("computer wins")
+            }else{
+                console.log("computer wins");
+            }
+         
+
+
 }
       
