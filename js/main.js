@@ -22,5 +22,6 @@ switch("2"){
         console.log("3")
         //run   this code if no case matches
         //no need for a break here
+        // 
 }
       
