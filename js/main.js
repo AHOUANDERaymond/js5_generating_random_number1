@@ -4,10 +4,16 @@
 //suntax
 //Condition? ifTrue: ifFalse;
 
-let soup= "Chicken Noodle Soup";
-let isCustomerBanned= false;
-let soupAccess= isCustomerBanned ? "Sorry,no soup for you!" : soup? 'Yes, we have ${soup} today.': "Sorry, no soup today";
+let testScore= 12;
+let myGrade= 
+    testScore>89
+        ? "A"
+        :testScore>79
+        ? "B"
+        :testScore>69
+        ? "C"
+        :testScore>59
+        ? "D"
+        : "F";
 
-
-
-console.log(soupAccess);
+console.log(`My test grade is a ${myGrade}`)
