@@ -1,17 +1,13 @@
 // //Conditionals: Ternary Operator
 
+// Définition de la variable
+let age = 14;
 
-// Définition des variables
-let experience = 5;  // nombre d'années d'expérience
-let evenementDifficulte = "avancé";  // difficulté de l'événement, mais on s'en fiche maintenant
-
-// Utilisation de l'opérateur ternaire sans condition sur l'événement
-let participation = 
-    experience >= 5
-        ? "Peut participer à l'événement"
-        : "Ne peut pas participer à l'événement";
+// Utilisation de l'opérateur ternaire pour vérifier si la personne peut voter
+let resultat = age >= 18 ? "Peut voter" : "Ne peut pas voter";
 
 // Affichage du résultat
-console.log(participation);
+console.log(resultat);
+
 
 
