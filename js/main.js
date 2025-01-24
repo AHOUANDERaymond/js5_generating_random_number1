@@ -1,19 +1,14 @@
 // //Conditionals: Ternary Operator
 
+// Définition des variables
+let age = 45;
+let revenusMensuels = 3000;
 
-//suntax
-//Condition? ifTrue: ifFalse;
+// Utilisation de l'opérateur ternaire pour vérifier l'éligibilité
+let eligibilite = 
+    age >= 18 && revenusMensuels >= 5000
+        ? "Eligible pour un prêt"
+        : "Non éligible pour un prêt";
 
-let testScore= 12;
-let myGrade= 
-    testScore>89
-        ? "A"
-        :testScore>79
-        ? "B"
-        :testScore>69
-        ? "C"
-        :testScore>59
-        ? "D"
-        : "F";
-
-console.log(`My test grade is a ${myGrade}`)
+// Affichage du résultat
+console.log(`La personne est : ${eligibilite}`);
