@@ -1,14 +1,17 @@
-// //Conditionals: Ternary Operator
+// User input
 
-//Syntax
-//condition ? ifTrue : ifFalse;
 
-let playerOne ="paper";
-let computer ="rock";
-let result = 
-    playerOne===computer? 
-        "Tie game!"
-        : playerOne==="rock" && computer ==="paper" ? "computer wins"
-        : playerOne==="paper" && computer ==="scissors" ? "computer wins"
-        : playerOne==="scissors" && computer ==="rock" ? "computer wins";
-console.log(result);
+
+// let myBoolean=confirm("Ok===True\nCancel===False");
+// console.log(myBoolean);
+
+
+let name= prompt("Please, enter your name.");
+if (name){
+  console.log(name.length);
+  console.log(name.trim().length);
+  console.log(name.trim());
+
+}else{
+    console.log("You didn't enter your name");
+}
