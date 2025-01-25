@@ -1,13 +1,14 @@
 // //Conditionals: Ternary Operator
 
-// Définition de la variable
-let age = 14;
+//Syntax
+//condition ? ifTrue : ifFalse;
 
-// Utilisation de l'opérateur ternaire pour vérifier si la personne peut voter
-let resultat = age >= 18 ? "Peut voter" : "Ne peut pas voter";
-
-// Affichage du résultat
-console.log(resultat);
-
-
-
+let playerOne ="paper";
+let computer ="rock";
+let result = 
+    playerOne===computer? 
+        "Tie game!"
+        : playerOne==="rock" && computer ==="paper" ? "computer wins"
+        : playerOne==="paper" && computer ==="scissors" ? "computer wins"
+        : playerOne==="scissors" && computer ==="rock" ? "computer wins";
+console.log(result);
