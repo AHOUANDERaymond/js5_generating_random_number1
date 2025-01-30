@@ -1,3 +1,5 @@
 // Loops
-for (let i=1; i<=10; i++);
-  console.log(i);
+let name= "Raymond";
+for (let i=1 ;i<=name.length; i++){
+  console.log(name.charAt(i));
+}
