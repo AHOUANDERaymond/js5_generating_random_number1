@@ -1,5 +1,5 @@
 // Loops
-let name="Ray";
+let name="GLORIA";
 let counter = 0;
 let myLetter;
 while (counter <=2){
@@ -8,7 +8,7 @@ while (counter <=2){
     counter+=2;
     continue;
   }
-  if (myLetter==="y") break;
+  if (myLetter==="I") break;
 
   counter++;
 
