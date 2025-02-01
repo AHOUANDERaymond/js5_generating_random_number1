@@ -1,15 +1,10 @@
 //Functions
 
 //Functions declaration Syntax:
-function sum(numb1, numb2) {
-  if (numb2 === undefined) {
-    return numb1 + numb1;
-    
-  }
 
-  return numb1+numb2;
+function getUserNameFromEmail(email) {
+  return email.slice(0,email.indexOf("@"));
 
 }
-console.log(sum(2,6));
-
+console.log(getUserNameFromEmail("raymondahouande@gmail.com"));
 
