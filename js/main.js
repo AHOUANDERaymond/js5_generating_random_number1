@@ -2,15 +2,8 @@
 
 //Functions declaration Syntax:
 
-// function getUserNameFromEmail(email) {
-//   return email.slice(0,email.indexOf("@"));
-
-// }
-// console.log(getUserNameFromEmail("raymondahouande@gmail.com"));
-
-
-const getUserNameFromEmail = function(email) {
-  return email.slice(0,email.indexOf("@"));
+const toProperCase = (name) => {
+  return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
 
 }
-console.log(getUserNameFromEmail("raymondahouande@gmail.com"));
+console.log(toProperCase("ma reussite est assuree"));
