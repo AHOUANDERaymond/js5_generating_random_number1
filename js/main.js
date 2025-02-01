@@ -1,20 +1,7 @@
-// Loops
-let name="GLORIA";
-let counter = 0;
-let myLetter;
-while (counter<=3){
-  myLetter = name[counter];
-  console.log(myLetter);
-  if (counter===1);{
-    counter+=2;
-    continue;
-  }
-  if (myLetter==="I") break;
-  counter++;
+//Functions
 
-}
-console.log(counter);
-  
-  
+//Methods = Built-in functions
+"Raymond".toLowerCase();
+Math.random();
 
 
