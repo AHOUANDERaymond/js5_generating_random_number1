@@ -1,9 +1,19 @@
-//Functions
+// var, let and const
+//global scope
+var x=1;
+let y=2;
+const z=3;
+//local scope
+function myFunc() {
+    // const z=5;
+    console.log();
+    //local scope
+    {
+        let y=4;
+        console.log(z);
 
-//Functions declaration Syntax:
 
-const toProperCase = (name) => {
-  return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+    }
 
 }
-console.log(toProperCase("ma reussite est assuree"));
+myFunc();
