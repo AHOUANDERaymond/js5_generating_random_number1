@@ -12,9 +12,7 @@ console.log(`global:${z}`);
 function myFunc() {
   var x=10;
   const z=5;
-  console.log(`function:${x}`);
-  console.log(`function:${y}`);
-  console.log(`function:${z}`);
+ 
   {
     var x=11;
     const z=6;
@@ -23,6 +21,10 @@ function myFunc() {
     console.log(`block:${z}`);
 
   }
+  console.log(`function:${x}`);
+  console.log(`function:${y}`);
+  console.log(`function:${z}`);
+
 
 }
 
