@@ -1,19 +1,29 @@
 // var, let and const
+
 //global scope
-var x=1;
-let y=2;
+var x=1; //function scoped
+let y=2;  //block scoped
 const z=3;
-//local scope
+
+console.log(`global:${x}`);
+console.log(`global:${y}`);
+console.log(`global:${z}`);
+
 function myFunc() {
-    // const z=5;
-    console.log();
-    //local scope
-    {
-        let y=4;
-        console.log(z);
+  var x=10;
+  const z=5;
+  console.log(`function:${x}`);
+  console.log(`function:${y}`);
+  console.log(`function:${z}`);
+  {
+    var x=11;
+    const z=6;
+    console.log(`block:${x}`);
+    console.log(`block:${y}`);
+    console.log(`block:${z}`);
 
-
-    }
+  }
 
 }
+
 myFunc();
