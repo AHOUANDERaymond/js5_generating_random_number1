@@ -6,7 +6,7 @@ const myArray = [];
 myArray[0] = "Donald";
 myArray[1] = 1011;
 myArray[2] = false;
-
+myArray[2] = true;
 
 
 const newLength = myArray.unshift(42);
