@@ -1,6 +1,6 @@
 //Arrays
 
-const myArrayA = ["A", "B", "C"];
+const myArrayA = ["A", "B", "C", "C1"];
 
 const myArrayB = [ "D", "E", "F", "G"];
 
