@@ -1,11 +1,9 @@
 //Arrays
 
-const myArray = ["A", "B", "C", "D", "E", "F"];
+const myArrayA = ["A", "B", "C"];
 
+const myArrayB = [ "D", "E", "F"];
 
-const newString = myArray.join();
-
-
-const newArray = newString.split("A");
+const newArray = myArrayB.concat(myArrayA);
 
 console.log(newArray);
