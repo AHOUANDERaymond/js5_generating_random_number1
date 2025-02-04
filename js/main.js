@@ -1,17 +1,11 @@
 //Arrays
 
-const myArray = [];
-
-//add elements to an array
-myArray[0] = "Donald";
-myArray[1] = 1011;
-myArray[2] = false;
-myArray[3] = true;
-myArray[4] = "4545";
+const myArray = ["A", "B", "C", "D", "E", "F"];
 
 
+const newString = myArray.join();
 
-myArray.splice(1,0,43);
 
-console.log(myArray);
-console.log(myArray [1]);
+const newArray = newString.split("A");
+
+console.log(newArray);
