@@ -1,10 +1,19 @@
 //Arrays
 
-const myArrayA = ["A", "B", "C", "C1"];
+const equipShelfA = ["baseball", "football", "volleyball"];
 
-const myArrayB = [ "D", "E", "F", "G"];
+const equipShelfB = ["basketball", "golf balls", "tennis balls"];
 
+const clothesShelfA = ["tank tops", "t-shirts", "jerseys"];
 
-const newArray = [myArrayA, myArrayB];
+const clothesShelfB = ["sweat tops", "sweat pants", "hoodles"];
 
-console.log(newArray);
+console.log(equipShelfA[1]);
+//or
+console.log(clothesShelfB[0]);
+
+const equipDept = [equipShelfA, equipShelfB];
+const clothesDept = [clothesShelfA, clothesShelfB];
+
+console.log(equipDept);
+console.log(clothesDept)
