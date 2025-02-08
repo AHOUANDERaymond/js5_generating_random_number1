@@ -54,7 +54,7 @@ const initGame = () => {
     if (
       playerChoice === "rock" ||
       playerChoice === "paper" ||
-      playerChoice === "scissors"
+      playerChoice === "scissors" 
     ) {
       return playerChoice;
     } else {
@@ -96,7 +96,7 @@ const initGame = () => {
   };
   
   const thanksForPlaying = () => {
-    alert("Ok, thanks for playing.");
+    alert("Ok, thanks for playing...");
   };
   
   initGame();
