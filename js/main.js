@@ -1,20 +1,42 @@
-//  Magasin de musique : Organisation des rayons
+// Your First Interactive Game
+let playGame = confirm("Shall we play rock, paper, or scissors?");
+if (playGame) {
+  //play
+  let playerChoice = prompt("Please enter rock, paper, or scissors.");
+  if (playerChoice) {
+    let playerOne = playerChoice.trim().toLowerCase();
+    if (
+      playerOne === "rock" ||
+      playerOne === "paper" ||
+      playerOne === "scissors"
+    ) {
+      let computerChoice = Math.floor(Math.random() * 3 + 1);
+      let computer =
+        computerChoice === 1
+          ? "rock"
+          : computerChoice === 2
+          ? "paper"
+          : "scissors";
 
-//  Instruments
-const stringInstruments = ["guitare", "violon", "harpe"];
-const windInstruments = ["flûte", "saxophone", "trompette"];
-
-//  Accessoires
-const headphones = ["casque audio", "écouteurs", "micro"];
-const cables = ["câble jack", "câble USB", "câble XLR"];
-
-//  Regroupement en départements
-const instrumentsDept = [stringInstruments, windInstruments];
-const accessoriesDept = [headphones, cables];
-
-//  Magasin entier
-const musicStore = [instrumentsDept, accessoriesDept];
-
-// Accès aux éléments
-console.log(musicStore[0][0][2]); // Affiche "harpe"
-console.log(musicStore[1][1][0]); // Affiche "câble jack"
+      let result =
+        playerOne === computer
+          ? "Tie game!"
+          : playerOne === "rock" && computer === "paper"
+          ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins!`
+          : playerOne === "paper" && computer === "scissors"
+          ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins!`
+          : playerOne === "scissors" && computer === "rock"
+          ? `playerOne: ${playerOne}\nComputer: ${computer}\nComputer wins!`
+          : `playerOne: ${playerOne}\nComputer: ${computer}\nplayerOne wins!`;
+      alert(result);
+      let playAgain = confirm("Play Again?");
+      playAgain ? location.reload() : alert("Ok, thanks for playing.");
+    } else {
+      alert("You didn't enter rock, paper, or scissors.");
+    }
+  } else {
+    alert("I guess you changed your mind. Maybe next time.");
+  }
+} else {
+  alert("Ok, maybe next time.");
+}
