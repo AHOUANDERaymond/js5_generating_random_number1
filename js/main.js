@@ -9,14 +9,17 @@
     beverage: {
         morning: "Coffee",
         afternoon: "Tea"
+    },
+
+    action: function(){
+        return `Time for ${this.beverage.morning}`;
+
     }
-
-
 
 
  }
 
 
 
- console.log(infoObj["beverage"]);
+ console.log(infoObj.action());
 
