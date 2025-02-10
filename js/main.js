@@ -1,23 +1,17 @@
 //Objects
  //Key-value pairs in curly braces
- const vehicle = {
-    wheels: 4,
-    engine: function() {
-        return "Vroooom!";
-
-    }
+ const band ={
+    vocals: "Robert Plant",
+    guitar: "Roland Page",
+    bass: "John Paul Jones",
+    drums: "John Boham"
  };
 
+ console.log(Object.keys(band));
+ console.log(Object.values(band));
 
- 
- const car = Object.create(vehicle);
- car.doors = 4;
- car.engine = function(){
-    return "Whooooooosh!";
+ for (let job in band) {
+    console.log(band[job]);
+ }
 
- };
-
-
-
- console.log(car.engine());
 
