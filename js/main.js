@@ -8,18 +8,15 @@
  };
 
 
+//destructuring objects
 
- delete band.drums;
- console.log(band.hasOwnProperty("drums"));
+const { vocals, guitar, bass, drums} = band;
 
- console.log(Object.keys(band));
- console.log(Object.values(band));
+console.log(guitar);
+console.log(vocals);
 
- for (let job in band) {
-    console.log(band[job]);
- }
+function sings({vocals}){return`${vocals} sings!`};
+console.log(sings(band));
 
- for (let job in band) {
-    console.log(`on ${job}, it's ${band[job]} !`);
- }
+
 
