@@ -1,22 +1,25 @@
-//Objects
- //Key-value pairs in curly braces
- const band ={
-    vocals: "Robert Plant",
-    guitar: "Roland Page",
-    bass: "John Paul Jones",
-    drums: "John Boham"
- };
+//Javascript classes
+
+class Pizza{
+   constructor(pizzatype) {
+      this.type = pizzatype;
+      this.size = "medium";
+      this.crust = "original";
+
+   }
+   bake() {
+      console.log(
+         `Baking a ${this.size} ${this.crust} ${this.type} crust pizza`);
+   }
 
 
-//destructuring objects
 
-const { vocals, guitar, bass, drums} = band;
+}
 
-console.log(guitar);
-console.log(vocals);
+const myPizza = new Pizza();
 
-function sings({vocals}){return`${vocals} sings!`};
-console.log(sings(band));
+myPizza.bake();
+
 
 
 
