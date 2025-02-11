@@ -17,6 +17,8 @@ class Pizza{
 }
 
 const myPizza = new Pizza();
+const myPizza1 = new Pizza();
+
 
 myPizza.bake();
 
