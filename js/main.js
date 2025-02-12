@@ -19,6 +19,7 @@ class Pizza{
 const myPizza = new Pizza();
 const myPizza1 = new Pizza();
 const myPizza2 = new Pizza();
+const myPizza3 = new Pizza();
 
 
 
