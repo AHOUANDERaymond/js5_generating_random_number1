@@ -3,8 +3,8 @@
 class Pizza{
    constructor(pizzatype) {
       this.type = pizzatype;
-      this.size = "medium";
-      this.crust = "original";
+      this.size = "mediums";
+      this.crust = "originals";
 
    }
    bake() {
