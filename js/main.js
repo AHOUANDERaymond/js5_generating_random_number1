@@ -18,6 +18,8 @@ class Pizza{
 
 const myPizza = new Pizza();
 const myPizza1 = new Pizza();
+const myPizza2 = new Pizza();
+
 
 
 myPizza.bake();
