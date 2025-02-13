@@ -1,30 +1,20 @@
-//Javascript classes
+//JSON: Javascript Object Notation
+/* 
+JSON is used to send and receive Data. 
+JSON is a text format that is completely language independant. 
+Meaning JSON is used to dend and receive data from any languages  
+...not just in Javascript.
+*/
 
-class Pizza{
-   constructor(pizzatype) {
-      this.type = pizzatype;
-      this.size = "mediums";
-      this.crust = "originals";
+const myObj = {
+   name :"Raymond",
+   hobbies: ["eat", "sleep", "code"],
+   hello: function() {
+      console.log("Hello");
 
    }
-   bake() {
-      console.log(
-         `Baking a ${this.size} ${this.crust} ${this.type} crust pizza`);
-   }
 
-
-
-}
-
-const myPizza0 = new Pizza();
-const myPizza1 = new Pizza();
-const myPizza2 = new Pizza();
-const myPizza3 = new Pizza();
-
-
-
-myPizza.bake();
-
-
-
-
+};
+console.log(myObj);
+console.log(myObj.name);
+myObj.hello();
