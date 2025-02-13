@@ -1,27 +1,22 @@
-//JSON: Javascript Object Notation
-/* 
-JSON is used to send and receive Data. 
-JSON is a text format that is completely language independant. 
-Meaning JSON is used to dend and receive data from any languages  
-...not just in Javascript.
-*/
+//Javascript Error and Error handling
 
-const myObj = {
-   name :"Raymond",
-   hobbies: ["eat", "sleep", "code"],
-   hello: function() {
-      console.log("Hello");
+"use strict";
+const makeError = () => {
+   let i=1;
+   while (i<=5) {
+      try{
+         throw new Error("this is an error");
 
+      }  catch (err) {
+         console.error(err.name);
+         console.error(err.message);
+         console.error(err.stack);
+
+      } finally {
+         console 
+      }
    }
 
+   }
 };
-console.log(myObj);
-console.log(myObj.name);
-myObj.hello();
-console.log(typeof myObj);
-
-const sendJSON = JSON.stringify(myObj);
-
-console.log(sendJSON);
-
-console.log(typeof sendJSON);
+makeError();
