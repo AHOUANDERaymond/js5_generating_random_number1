@@ -9,7 +9,7 @@ const makeError = () => {
 
       }  catch (err) {
          console.error(err.name);
-         console.error(err.message);
+         console.error(err.messages);
          console.error(err.stack);
 
       } finally {
