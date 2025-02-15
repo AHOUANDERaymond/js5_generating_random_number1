@@ -1,23 +1,42 @@
-//Javascript Error and Error handling
+// 1. Sélectionner un élément par son ID (getElementById)
+const title = document.getElementById("title");
+const taskInput = document.getElementById("taskInput");
+const addTaskBtn = document.getElementById("addTaskBtn");
+const taskList = document.getElementById("taskList");
+const changeTitleBtn = document.getElementById("changeTitleBtn");
+const highlightTasksBtn = document.getElementById("highlightTasksBtn");
+const hideTasksBtn = document.getElementById("hideTasksBtn");
 
-"use strict";
-const makeError = () => {
-   try{
-      throw new customError("This is a custom error")
-      // const name = "Raymond";
+// 2. Sélectionner un élément avec querySelector
+changeTitleBtn.addEventListener("click", function () {
+    const h1 = document.querySelector("#title");
+    h1.textContent = "Ma nouvelle liste de tâches";
+    h1.style.color = "blue";
+});
 
-      // throw new Error("this is an error");
-      name = "Raymond";
+// 3. Sélectionner plusieurs éléments avec getElementsByClassName
+highlightTasksBtn.addEventListener("click", function () {
+    const tasks = document.getElementsByClassName("task");
+    for (let task of tasks) {
+        task.classList.toggle("highlight");
+    }
+});
 
-   }  catch (err) {
-      console.error(err.stack);
+// 4. Sélectionner plusieurs éléments avec getElementsByTagName
+hideTasksBtn.addEventListener("click", function () {
+    const listItems = document.getElementsByTagName("li");
+    for (let item of listItems) {
+        item.style.display = item.style.display === "none" ? "block" : "none";
+    }
+});
 
-   }
-};
-makeError();
-
-function customError(message) {
-   this.message = message;
-   this.name = "customerError";
-   this.stack = `${this.name}: ${this.meassage}`;
-}
+// 5. Sélectionner plusieurs éléments avec querySelectorAll
+addTaskBtn.addEventListener("click", function () {
+    if (taskInput.value.trim() !== "") {
+        const newTask = document.createElement("li");
+        newTask.className = "task";
+        newTask.textContent = taskInput.value;
+        taskList.appendChild(newTask);
+        taskInput.value = "";
+    }
+});
