@@ -2,23 +2,22 @@
 
 "use strict";
 const makeError = () => {
-   let i=1;
-   while (i<=5) {
-      try{
+   try{
+      throw new customError("This is a custom error")
+      // const name = "Raymond";
 
-         throw new Error("this is an error");
+      // throw new Error("this is an error");
+      name = "Raymond";
 
-      }  catch (err) {
-         console.error(err.name);
-         
-         console.error(err.messages);
-         console.error(err.stack);
-
-      } finally {
-         console 
-      }
-   }
+   }  catch (err) {
+      console.error(err.stack);
 
    }
-;
+};
 makeError();
+
+function customError(message) {
+   this.message = message;
+   this.name = "customerError";
+   this.stack = `${this.name}: ${this.meassage}`;
+}
