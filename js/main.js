@@ -8,7 +8,7 @@ const h2 = div.querySelector("h2");
 
 
 const doSomething = () => {
-   alert("doing something");
+   alert("doing some thing");
 
 };
 
