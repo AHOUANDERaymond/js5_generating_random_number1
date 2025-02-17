@@ -14,6 +14,8 @@ const doSomething = () => {
 
 h2.addEventListener("click", doSomething,false);
 h2.removeEventListener("click", doSomething,false);
+h3.removeEventListener("click", doSomething,false);
+
 
 h2.addEventListener("click", function(event) {
    console.log(event.target);
